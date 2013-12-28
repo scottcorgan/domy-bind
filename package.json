@@ -1,0 +1,51 @@
+{
+  "name": "domy-bind",
+  "version": "0.1.0",
+  "description": "Two-way data binding for frontend Browserify code",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/testling",
+    "testopen": "node_modules/.bin/testling -x open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottcorgan/domy-bind.git"
+  },
+  "keywords": [
+    "data",
+    "binding",
+    "two",
+    "way",
+    "domy"
+  ],
+  "author": "Scott Corgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottcorgan/domy-bind/issues"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2",
+    "testling": "~1.5.6",
+    "domy-element": "~0.4.0"
+  },
+  "testling": {
+    "files": [
+      "test/index.js"
+    ],
+    "browsers": [
+      "iexplore/10.0",
+      "iexplore/9.0",
+      "firefox/16..latest",
+      "chrome/22..latest",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  },
+  "dependencies": {
+    "domy-element": "~0.4.0",
+    "interpolate": "~0.1.0",
+    "watchjs": "0.0.0"
+  }
+}
