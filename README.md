@@ -16,6 +16,7 @@ npm install domy-bind --save
  
 ```js
 var bind = require('domy-bind');
+var insert = require('domy-insert');
 
 var html = [
   '<div>',
@@ -31,7 +32,7 @@ var data = {
 
 var element = bind(html).to(data);
 
-document.body.appendChild(element);
+insert(element).end();
 
 data.title = "New Title"; // Html/DOM will update when this is changed
 ```
